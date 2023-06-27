@@ -1,0 +1,79 @@
+.menu{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+display: flex;
+flex-direction: column;
+background-color:  #0047AB;
+width: 15%;
+height: 50%;
+border-top-right-radius: 8px;
+border-bottom-right-radius: 8px;
+justify-content: center;
+align-items: left;
+margin-top: 100px;
+position: relative;
+transition: ease-in-out .3s;
+border: 1px solid rgba(255, 255, 255, .2);
+}
+
+.navbar svg{
+    cursor: pointer;
+}
+.navbar li:hover{
+    opacity: .7;
+ }
+.navbar ul{
+    list-style: none;
+}
+.navbarActive{
+    display: flex;
+    flex-direction: column;
+    background-color:  #0047AB;
+    width: 50%;
+    height: 50%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    justify-content: center;
+    align-items: left;
+    margin-top: 100px;
+    position: relative;
+    transition: ease-in-out .3s;
+    border: 1px solid rgba(255, 255, 255, .2);
+}
+
+.navbarActive svg{
+    cursor: pointer;
+}
+
+.navbarActive li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.navbarActive li:hover{
+    opacity: .7;
+}
+
+.iconMenuRight{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    height: 30px;
+    border-radius: 4px;
+}
+
+.iconMenuLeft{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    height: 30px;
+    border-radius: 4px;
+}

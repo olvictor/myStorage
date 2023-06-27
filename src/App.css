@@ -1,0 +1,28 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.a{
+  grid-column: 1/2;
+}
+
+.b{
+  grid-column: 2/3;
+}
+
+.c{
+  grid-column: 3/4;
+}
