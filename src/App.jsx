@@ -1,19 +1,17 @@
-import LeftSide from './LeftSide'
-import CenterSide from './CenterSide'
 import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './Home'
+import { Registrar } from './Registrar'
+import Analise from './Analise'
 function App() {
 
   return (
     <>
-      <div className='main'>
-          <div className='a'>
-            <LeftSide />
-          </div>
-          <div className='b'>
-            <CenterSide />
-          </div>
-          <div className='c'>c</div>
-      </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/*' element={<Home />}/>
+      </Routes>
+      </BrowserRouter>
     </>
   )
 }

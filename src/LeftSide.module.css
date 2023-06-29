@@ -22,6 +22,8 @@ border: 1px solid rgba(255, 255, 255, .2);
 
 .navbar svg{
     cursor: pointer;
+    height: 40px;
+
 }
 .navbar li:hover{
     opacity: .7;
@@ -46,7 +48,7 @@ border: 1px solid rgba(255, 255, 255, .2);
 }
 
 .navbarActive svg{
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 .navbarActive li{
@@ -77,3 +79,4 @@ border: 1px solid rgba(255, 255, 255, .2);
     height: 30px;
     border-radius: 4px;
 }
+

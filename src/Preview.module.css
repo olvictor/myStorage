@@ -1,0 +1,52 @@
+.Main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Main h1{
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.Main span{
+    color: #0047AB;
+}
+
+.Main form{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 30px
+}
+
+
+.Main form button{
+    pointer-events: none;
+}
+
+.containerApps{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    align-items: start;
+}
+
+.containerApps img{
+    height: 34px;
+}
+.chart{
+    text-align: left;
+    align-items: center;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+svg{
+    fill: aliceblue;
+}

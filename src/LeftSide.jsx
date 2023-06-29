@@ -6,6 +6,8 @@ import {BsFillJournalBookmarkFill} from 'react-icons/bs'
 import {VscGraph} from 'react-icons/vsc'
 import {BsChevronDoubleRight} from 'react-icons/bs'
 import {AiOutlineDoubleLeft} from 'react-icons/ai'
+import {AiOutlineHome} from 'react-icons/ai'
+import { NavLink } from 'react-router-dom'
 
 
 const leftSide = () => {
@@ -23,6 +25,8 @@ const leftSide = () => {
 
   
   return (
+
+
     <div className={styles.menu}>
       <h1>Painel Adiministrativo</h1>
       <div 
@@ -40,9 +44,18 @@ const leftSide = () => {
             style={{display: active ? 'block' : 'none'}}
             onClick={handleUnActive}
             />
-            <li><BsFillJournalBookmarkFill /><p style={{display: active ? 'block' : 'none'}}>Registrar</p></li>
-            <li><MdStorage /><p style={{display: active ? 'block' : 'none'}}>Estoque</p></li>
-            <li><VscGraph/><p style={{display: active ? 'block' : 'none'}}>Análise</p></li>
+            <NavLink to={'/'} end> 
+             <li><AiOutlineHome /><p style={{display: active ? 'block' : 'none'}}>Registrar</p></li>
+            </NavLink>
+            <NavLink to={'/registrar'}> 
+             <li><BsFillJournalBookmarkFill /><p style={{display: active ? 'block' : 'none'}}>Registrar</p></li>
+            </NavLink>
+            <NavLink to={'/estoque'}>
+               <li><MdStorage /><p style={{display: active ? 'block' : 'none'}}>Estoque</p></li>
+            </NavLink >
+            <NavLink to={'/analise'}>
+              <li><VscGraph/><p style={{display: active ? 'block' : 'none'}}>Análise</p></li>
+            </NavLink>
           </ul>
       </div>
     </div>
