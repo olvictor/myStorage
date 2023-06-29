@@ -1,17 +1,23 @@
 import React from 'react'
 import Chart from "react-apexcharts";
 
-const Charts = () => {
+const Charts = ({produtosRegistrados}) => {
+//    console.log(produtosRegistrados)
+
+   const Produtos = produtosRegistrados.map((produto)=> produto.produto)
+   const produtosQtd = produtosRegistrados.map((produto)=> produto.quantidade)
+
+    
 
     const data = {
         options: {
-            labels: ['Apple', 'Mango', 'Orange', 'Watermelon','Pera']
+            labels: [...Produtos]
           },
-          series: [60, 55, 13, 33,10],
+          series: [...produtosQtd],
         
     }
   return (
-    <Chart
+    <Chart 
               options={data.options}
               series={data.series}
               type="donut"
