@@ -1,6 +1,6 @@
 import LeftSide from './LeftSide'
+import CenterSide from './CenterSide'
 import './App.css'
-
 function App() {
 
   return (
@@ -9,7 +9,9 @@ function App() {
           <div className='a'>
             <LeftSide />
           </div>
-          <div className='b'>b</div>
+          <div className='b'>
+            <CenterSide />
+          </div>
           <div className='c'>c</div>
       </div>
     </>

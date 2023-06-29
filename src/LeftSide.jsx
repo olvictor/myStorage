@@ -12,22 +12,16 @@ const leftSide = () => {
   const [active,setActive] = useState(false);
   const [hovered,setHovered] = useState(false);
 
-  console.log(hovered)
 
-  const setHover = () =>{
-     setHovered(true)
-  }
-  const unSetHover=()=>{
-    setHovered(false)
-  }
-  const handleActive =()=>{
-    setActive(true)
-  }
+  const setHover = () => setHovered(true)
 
-  const handleUnActive=()=>{
-    setActive(false)
+  const unSetHover = () => setHovered(false)
 
-  }
+  const handleActive = () => setActive(true)
+  
+  const handleUnActive= () => setActive(false)
+
+  
   return (
     <div className={styles.menu}>
       <h1>Painel Adiministrativo</h1>
